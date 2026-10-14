@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Revizyon Yapı | Konya'da profesyonel iç mimari, tadilat ve yapı hizmetleri. Banyo, mutfak, dış cephe, kapı ve ofis projeleriniz için bize ulaşın.">
+    <meta name="keywords" content="revizyon yapı, konya tadilat, iç mimari, banyo tadilatı, dış cephe, ofis tasarımı, kapı modelleri, yapı hizmetleri">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <title>Revizyon Yapı | Konya Profesyonel İnşaat ve Tadilat Hizmetleri</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVİGASYON -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1><i class="fas fa-building"></i> REVİZYON YAPI</h1>
+            </div>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Menü">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Anasayfa</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION - IMAGE CAROUSEL -->
+    <section id="home" class="hero">
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide fade">
+                    <img src="images/salon-tv-unitesi/1.jpeg" alt="Modern salon ve TV ünitesi uygulaması" fetchpriority="high">
+                </div>
+                <div class="carousel-slide fade">
+                    <img data-src="images/ofis/1.jpeg" alt="Modern ofis tasarımı">
+                </div>
+                <div class="carousel-slide fade">
+                    <img data-src="images/dis-cephe/1.jpeg" alt="Dış cephe yenileme projesi">
+                </div>
+            </div>
+
+            <!-- CAROUSEL CONTROLS -->
+            <button class="carousel-prev" id="carouselPrev">&#10094;</button>
+            <button class="carousel-next" id="carouselNext">&#10095;</button>
+
+            <!-- CAROUSEL INDICATORS -->
+            <div class="carousel-indicators">
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+                <span class="indicator" data-slide="3"></span>
+            </div>
+
+            <!-- HERO CONTENT OVERLAY -->
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <span class="hero-eyebrow">Konya'da tadilat ve yapı çözümleri</span>
+                    <h2>Yaşam alanınız,<br>yeniden hayat bulsun.</h2>
+                    <p>İç mekan tasarımından anahtar teslim tadilata, her adımda özenli işçilik.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="cta-btn">İletişime Geç</a>
+                        <a href="#gallery" class="hero-secondary-link">Projeleri Gör <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KURUMSAL VİZYON BÖLÜMÜ -->
+    <section class="vision-section">
+        <div class="container">
+            <div class="vision-wrapper">
+                <div class="vision-text">
+                    <span class="vision-label">Konya'da, işin başından sonuna</span>
+                    <h2>İyi bir iş,<br>detaylarda kendini belli eder.</h2>
+                    <p>Bir tadilatın iyi görünmesi kadar, doğru planlanması ve söz verilen zamanda tamamlanması da önemli. Revizyon Yapı olarak 10 yılı aşkın süredir Konya'da; keşiften uygulamaya, her adımı açık ve özenli bir süreçle yürütüyoruz.</p>
+                    <p>Banyo yenilemeden dış cepheye, mobilya uygulamasından ofis düzenlemesine kadar ihtiyacınıza uygun çözümler üretiyoruz. İşin her aşamasında ne yapılacağını ve nedenini sizinle birlikte netleştiriyoruz.</p>
+                    <a href="#contact" class="vision-btn">İletişime Geç <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="vision-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">yıllık sektör deneyimi</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">tamamlanan proje</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">farklı hizmet alanı</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERİ SECTION -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Galeri</h2>
+            <p class="section-subtitle">Projelerimizden seçmeler — bir kategoriye tıklayın</p>
+
+            <div class="gallery-categories">
+                <a href="galeri/banyo-lavabo.html" class="gallery-card">
+                    <img src="images/banyo-lavabo/1.jpeg" alt="Banyo &amp; Lavabo" loading="lazy">
+                    <div class="gallery-card-overlay">
+                        <h3><i class="fas fa-bath"></i> Banyo &amp; Lavabo</h3>
+                    </div>
+                </a>
+                <a href="galeri/dis-cephe.html" class="gallery-card">
+                    <img src="images/dis-cephe/1.jpeg" alt="Dış Cephe" loading="lazy">
+                    <div class="gallery-card-overlay">
+                        <h3><i class="fas fa-building"></i> Dış Cephe</h3>
+                    </div>
+                </a>
+                <a href="galeri/kapi-modelleri.html" class="gallery-card">
+                    <img src="images/kapi-modelleri/1.jpeg" alt="Kapı Modelleri" loading="lazy">
+                    <div class="gallery-card-overlay">
+                        <h3><i class="fas fa-door-open"></i> Kapı Modelleri</h3>
+                    </div>
+                </a>
+                <a href="galeri/ofis.html" class="gallery-card">
+                    <img src="images/ofis/1.jpeg" alt="Ofis" loading="lazy">
+                    <div class="gallery-card-overlay">
+                        <h3><i class="fas fa-briefcase"></i> Ofis</h3>
+                    </div>
+                </a>
+                <a href="galeri/salon-tv-unitesi.html" class="gallery-card">
+                    <img src="images/salon-tv-unitesi/1.jpeg" alt="Salon &amp; TV Ünitesi" loading="lazy">
+                    <div class="gallery-card-overlay">
+                        <h3><i class="fas fa-tv"></i> Salon &amp; TV Ünitesi</h3>
+                    </div>
+                </a>
+                <a href="galeri/vestiyer-hol-koridor.html" class="gallery-card">
+                    <img src="images/vestiyer-hol-koridor/1.jpeg" alt="Vestiyer / Hol / Koridor" loading="lazy">
+                    <div class="gallery-card-overlay">
+                        <h3><i class="fas fa-hat-cowboy"></i> Vestiyer / Hol / Koridor</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- İLETİŞİM FORMU -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Bize Ulaşın</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>İletişim Bilgileri</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adres</h4>
+                            <p>Konya, Türkiye</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p><a href="tel:+905537426015">0553 742 60 15</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:yusufbatuhanakpinar@gmail.com">yusufbatuhanakpinar@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://instagram.com/revizyon_yapi2020" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="quick-contact">
+                    <h3>Bize Yazın</h3>
+                    <p>Formu doldurun, en kısa sürede size dönelim.</p>
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mrewzply" method="POST">
+                        <input type="text" name="name" placeholder="Adınız Soyadınız" required>
+                        <input type="tel" name="phone" placeholder="Telefon Numaranız">
+                        <input type="email" name="email" placeholder="E-posta Adresiniz" required>
+                        <textarea name="message" rows="4" placeholder="Mesajınız..." required></textarea>
+                        <input type="hidden" name="_subject" value="Revizyon Yapı - Yeni İletişim Mesajı">
+                        <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Gönder</button>
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 REVİZYON YAPI - İnşaat ve Yapı Hizmetleri. Tüm hakları saklıdır.</p>
+            <div class="footer-links">
+                <a href="https://instagram.com/revizyon_yapi2020" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button class="scroll-to-top" title="Yukarı Çık"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/905537426015?text=Merhaba%2C%20proje%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp'tan Yazın">
+        <i class="fab fa-whatsapp"></i>
+        <span class="floating-whatsapp-tooltip">WhatsApp'tan Yazın</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
