@@ -168,7 +168,7 @@ Uyarı bildirimleri gösterir.
 
 Site içinde şu iletişim bilgileri bulunmaktadır:
 - **Adres**: Konya, Türkiye
-- **Telefon**: +90 (555) 123-4567
+- **Telefon**: +90 554 842 53 97
 - **Email**: revizyonyapi0@gmail.com
 
 ## 📜 Lisans
