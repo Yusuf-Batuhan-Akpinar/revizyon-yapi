@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yusuf-batuhan-akpinar.github.io/revizyon-yapi/sitemap.xml
