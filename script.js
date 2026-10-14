@@ -298,37 +298,22 @@ function initializeContactForm() {
     const form = document.getElementById('contactForm');
     if (!form) return;
 
-    form.addEventListener('submit', async function (e) {
+    form.addEventListener('submit', function (e) {
         e.preventDefault();
 
-        const btn = form.querySelector('.submit-btn');
         const msgDiv = document.getElementById('formMessage');
+        const data = new FormData(form);
+        const lines = ['Merhaba, web sitenizden yazıyorum.', 'Ad Soyad: ' + data.get('name')];
+        const phone = (data.get('phone') || '').toString().trim();
+        if (phone) lines.push('Telefon: ' + phone);
+        lines.push('Mesaj: ' + data.get('message'));
 
-        btn.disabled = true;
-        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Gönderiliyor...';
-        msgDiv.className = 'form-message';
-        msgDiv.textContent = '';
+        const url = 'https://wa.me/905548425397?text=' + encodeURIComponent(lines.join('\n'));
+        const win = window.open(url, '_blank', 'noopener');
+        if (!win) window.location.href = url;
 
-        try {
-            const response = await fetch('https://formspree.io/f/mrewzply', {
-                method: 'POST',
-                body: new FormData(form),
-                headers: { 'Accept': 'application/json' }
-            });
-
-            if (response.ok) {
-                msgDiv.className = 'form-message success';
-                msgDiv.textContent = '✓ Mesajınız iletildi! En kısa sürede size dönüş yapacağız.';
-                form.reset();
-            } else {
-                throw new Error('Sunucu hatası');
-            }
-        } catch {
-            msgDiv.className = 'form-message error';
-            msgDiv.textContent = '✗ Bir hata oluştu. Lütfen WhatsApp\'tan veya telefonla ulaşın.';
-        } finally {
-            btn.disabled = false;
-            btn.innerHTML = '<i class="fas fa-paper-plane"></i> Gönder';
-        }
+        msgDiv.className = 'form-message success';
+        msgDiv.textContent = '✓ WhatsApp açılıyor. Mesajı göndererek bize ulaşabilirsiniz.';
+        form.reset();
     });
 }

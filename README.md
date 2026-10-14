@@ -169,7 +169,7 @@ Uyarı bildirimleri gösterir.
 Site içinde şu iletişim bilgileri bulunmaktadır:
 - **Adres**: Konya, Türkiye
 - **Telefon**: +90 (555) 123-4567
-- **Email**: info@dekoart.com
+- **Email**: revizyonyapi0@gmail.com
 
 ## 📜 Lisans
 
